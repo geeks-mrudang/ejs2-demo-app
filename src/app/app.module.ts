@@ -1,6 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,10 @@ import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars';
 import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
-import { GridAllModule } from '@syncfusion/ej2-angular-grids';
+import { GridAllModule, PageService, ColumnChooserService, ToolbarService, SortService } from '@syncfusion/ej2-angular-grids';
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
+
+import { ConfigService } from './config/config.service'
 
 @NgModule({
   declarations: [
@@ -18,6 +21,7 @@ import { GridAllModule } from '@syncfusion/ej2-angular-grids';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     CheckBoxModule,
     DropDownListAllModule,
@@ -25,9 +29,10 @@ import { GridAllModule } from '@syncfusion/ej2-angular-grids';
     ToolbarModule,
     NumericTextBoxAllModule,
     DialogModule,
-    GridAllModule 
+    GridAllModule,
+    ContextMenuModule
   ],
-  providers: [],
+  providers: [PageService, ToolbarService, ColumnChooserService, SortService, ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

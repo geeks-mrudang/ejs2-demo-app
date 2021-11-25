@@ -1,5 +1,5 @@
 {
-  "name": "ejs2-demo-app",
+  "name": "ej2-demo-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -29,7 +29,9 @@
     "@syncfusion/ej2-angular-popups": "^19.3.53",
     "@syncfusion/ej2-base": "^19.3.54",
     "@syncfusion/ej2-buttons": "^19.3.53",
+    "@syncfusion/ej2-data": "^19.3.53",
     "@syncfusion/ej2-grids": "^19.3.54",
+    "@syncfusion/ej2-spreadsheet": "^19.3.55",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
