@@ -27,6 +27,7 @@
     "@syncfusion/ej2-angular-inputs": "^19.3.53",
     "@syncfusion/ej2-angular-navigations": "^19.3.54",
     "@syncfusion/ej2-angular-popups": "^19.3.53",
+    "@syncfusion/ej2-angular-treegrid": "^19.3.55",
     "@syncfusion/ej2-base": "^19.3.54",
     "@syncfusion/ej2-buttons": "^19.3.53",
     "@syncfusion/ej2-data": "^19.3.53",

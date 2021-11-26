@@ -15,8 +15,8 @@
       </e-columns>
     </ejs-grid> -->
     <ejs-grid [dataSource]='data' [toolbar]='toolbarOptions' allowFiltering='true' [enableInfiniteScrolling]='true'
-      [showColumnChooser]='true' [allowSorting]='true' [allowMultiSorting]='true' [filterSettings]='filterOptions'
-      height='400'>
+      [showColumnChooser]='true' [allowSorting]='true' [allowMultiSorting]='true' [frozenColumns]='2'
+      showColumnMenu='true' [groupSettings]='groupOptions' [filterSettings]='filterOptions' height='400'>
       <e-columns>
         <e-column type='checkbox' width='20'></e-column>
         <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' [showInColumnChooser]='false'>

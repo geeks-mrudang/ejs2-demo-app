@@ -1,6 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { orderDetails } from '../data';
-import { EditService, ToolbarService, PageService, InfiniteScrollService, InfiniteScrollSettingsModel, PageSettingsModel, FilterSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import {
+    EditService,
+    ToolbarService,
+    PageService,
+    InfiniteScrollService,
+    InfiniteScrollSettingsModel,
+    PageSettingsModel,
+    FilterSettingsModel,
+    ToolbarItems,
+    GroupSettingsModel,
+    GroupService,
+    ColumnMenuService
+} from '@syncfusion/ej2-angular-grids';
 import { DataManager, JsonAdaptor, ODataAdaptor, Query, UrlAdaptor } from '@syncfusion/ej2-data';
 import { MenuItemModel } from '@syncfusion/ej2-navigations';
 import { ConfigService } from './config/config.service'
@@ -8,7 +20,7 @@ import { ConfigService } from './config/config.service'
 @Component({
     selector: 'app-root',
     templateUrl: 'app.component.html',
-    providers: [ToolbarService, EditService, PageService, InfiniteScrollService]
+    providers: [ToolbarService, EditService, PageService, InfiniteScrollService, GroupService, ColumnMenuService]
 })
 
 export class AppComponent {
@@ -23,11 +35,12 @@ export class AppComponent {
     public options: PageSettingsModel;
     public infiniteOptions: InfiniteScrollSettingsModel
     public filterOptions: FilterSettingsModel;
+    public groupOptions: GroupSettingsModel;
     public toolbarOptions: ToolbarItems[];
-    
+
     constructor(
         private configService: ConfigService
-    ){}
+    ) { }
 
     public ngOnInit(): void {
         // this.getAPIData()
@@ -37,16 +50,15 @@ export class AppComponent {
         // this.options = { pageSize: 50 };
         // this.infiniteOptions = { initialBlocks: 5 };
         this.toolbarOptions = ['ColumnChooser'];
-        
+        this.groupOptions = { showGroupedColumn: true };
         this.data = new DataManager({
             url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders',
             adaptor: new ODataAdaptor(),
             crossDomain: true
         });
         this.filterOptions = {
-           type: 'Excel'
+            type: 'Excel'
         };
-
     }
 
     // getAPIData() {
