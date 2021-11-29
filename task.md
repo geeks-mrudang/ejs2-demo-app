@@ -2,52 +2,52 @@
 
 -> Done
 
-1. Please create a single webpage of TreeGrid, and host it online, so that we can all test the same version.
+2. Please create a single webpage of TreeGrid, and host it online, so that we can all test the same version.
 
 -> Done : https://hungry-rosalind-544024.netlify.app/
 
-1. You may borrow this source code: https://ej2.syncfusion.com/angular/documentation/treegrid/virtual, and all other Angular TreeGrid samples. By default, your TreeGrid has 10K rows (RowID=1,2,3...10K), all users edit this single TreeGrid (a JSON file on server), all edits are persistent between users.
+3. You may borrow this source code: https://ej2.syncfusion.com/angular/documentation/treegrid/virtual, and all other Angular TreeGrid samples. By default, your TreeGrid has 10K rows (RowID=1,2,3...10K), all users edit this single TreeGrid (a JSON file on server), all edits are persistent between users.
 
 -> TreeGrid integration is done using public dummy API
 
-1. This TreeGrid shall always occupy user's browser full-screen, enable Vertical & Horizontal default-scroll-bars, but no Pager bar (i.e. single page).
+4. This TreeGrid shall always occupy user's browser full-screen, enable Vertical & Horizontal default-scroll-bars, but no Pager bar (i.e. single page).
 
 -> Browser full screen not done. 
 
-1. This TreeGrid shall be fully responsive on both PC browser (keyboard+mouse) and Mobile touchscreen (fingers).
+5. This TreeGrid shall be fully responsive on both PC browser (keyboard+mouse) and Mobile touchscreen (fingers).
 
 -> Done
 
 * Please implement 2 Context Menus on this TreeGrid: (Note:  The ☑ symbol means this context menu item functions as an On/Off switch)
   * Context Menu 1 - 
   * Right-click or long-press (mobile) a "Column Header", to pop-up these menu items:
-1. EditCol: User can set (via dialog) a column's Name, Data-Type (Text/Num/Date/Boolean/DropDownList), Default-Value (of current DataType), Minimum-Column-Width (when screen shrinked), Font-size, Font-color, Background-color, Alignment, Text-wrap ☑.
+  5.1. EditCol: User can set (via dialog) a column's Name, Data-Type (Text/Num/Date/Boolean/DropDownList), Default-Value (of current DataType), Minimum-Column-Width (when screen shrinked), Font-size, Font-color, Background-color, Alignment, Text-wrap ☑.
 
--> Not done
+  -> Not done
   
-1. NewCol: User can Create a new column, with the same EditCol dialog, SAVE will create the Column, CANCEL will not.
+  5.2. NewCol: User can Create a new column, with the same EditCol dialog, SAVE will create the Column, CANCEL will not.
 
--> Not done
+  ->Not done
 
-1. DelCol: User can Delete a column, such change cannot be undone, (user can also Drag-n-drop to Reorder & Resize columns).
+  5.3. DelCol: User can Delete a column, such change cannot be undone, (user can also Drag-n-drop to Reorder & Resize columns).
 
--> Not done
+  -> Not done
 
-1. ChooseCol: User choose columns to show or hide. See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/columnchooser
+  5.4. ChooseCol: User choose columns to show or hide. See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/columnchooser
 
--> Done
+  -> Done
 
-1. FreezeCol ☑: Enable Freeze all-left-side (including current) columns, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/frozen-column
+  5.5. FreezeCol ☑: Enable Freeze all-left-side (including current) columns, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/frozen-column
 
--> Done
+  -> Done
 
-1. FilterCol ☑: Enable "Filter Bar" in Parent Hierarchy Mode, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/filter
+  5.6. FilterCol ☑: Enable "Filter Bar" in Parent Hierarchy Mode, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/filter
 
--> Done
+  -> Done
 
-1. MultiSort ☑: Enable Multi-Sort for columns, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/sorting
+  5.7. MultiSort ☑: Enable Multi-Sort for columns, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/sorting
 
--> Done
+  -> Done
 
 * Context Menu 2 - Rright-click or long-press (mobile) a "Row", to pop-up these menu items:
 
