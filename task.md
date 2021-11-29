@@ -51,18 +51,18 @@
 
 * Context Menu 2 - Rright-click or long-press (mobile) a "Row", to pop-up these menu items:
 
-1. AddNext; AddChild; DelRow; EditRow: User can Add(Next)/Add(Child)/Del/"Dialog-Edit" a row, (user can also Drag-n-drop to Move multi-selected rows).
+  1. AddNext; AddChild; DelRow; EditRow: User can Add(Next)/Add(Child)/Del/"Dialog-Edit" a row, (user can also Drag-n-drop to Move multi-selected rows).
 
--> Not done
+  -> Not done
 
-1. MultiSelect ☑: Enable user to "Multi-select" rows on PC and Mobile, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/selection
+  2. MultiSelect ☑: Enable user to "Multi-select" rows on PC and Mobile, See https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/selection
 
--> Not done
+  -> Not done
 
-1. CopyRows; CutRows: Copy/Cut multi-selected rows - similar to how MS Windows File Explorer copy/cut Files (leaf rows) and Folders (non-leaf rows).
+  3. CopyRows; CutRows: Copy/Cut multi-selected rows - similar to how MS Windows File Explorer copy/cut Files (leaf rows) and Folders (non-leaf rows).
 
--> Not done
-(The rows being Copied/Cut shall be highlighted in Pink color, but not removed yet, until user perform Paste)
+  -> Not done
+  (The rows being Copied/Cut shall be highlighted in Pink color, but not removed yet, until user perform Paste)
 PasteNext: Insert the copied/cut Rows as "next siblings" of the current row PasteChild: Insert the copied/cut Rows as "children" of the current row (Copy+Paste will auto-generate new RowIDs, because all RowIDs are unique in a TreeGrid)
 
 Tech stack: 
